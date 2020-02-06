@@ -3,12 +3,7 @@ import logo from "../logo.svg";
 import "../App.css";
 
 export default function Header(props) {
-  return (
-    <div>
-      {props.text()}
-      {props.logo()}
-    </div>
-  );
+  return <div>{props.logo({ text: props.text })}</div>;
 }
 export function Text() {
   return (
@@ -22,13 +17,14 @@ export function Text() {
     </a>
   );
 }
-export function Logo() {
+export function Logo(props) {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         I'm a component from <code>./src/components/FrontEndComponents</code> .
       </p>
+      {props.text()}
     </header>
   );
 }

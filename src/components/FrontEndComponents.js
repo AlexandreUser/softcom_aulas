@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../logo.svg";
-import "../App.css";
+import "./App.css";
 
 export default function Header(props) {
   return <div>{props.logo({ text: props.text })}</div>;

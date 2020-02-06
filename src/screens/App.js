@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Header, { Text, Logo } from "../src/components/FrontEndComponents";
+import Header, { Text, Logo } from "../components/FrontEndComponents";
 function App() {
   return (
     <div className="App">

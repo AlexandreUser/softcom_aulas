@@ -1,0 +1,10 @@
+.card {
+  width: 300px;
+  height: 120px;
+  background-color: aliceblue;
+  margin: 10px;
+  border-radius: 10px;
+}
+.cardInside {
+  padding: 10px;
+}
